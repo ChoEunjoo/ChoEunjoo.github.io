@@ -5,7 +5,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
-  height: 1000px;
   background-image: url("../images/bgimg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -178,17 +177,13 @@ header .main-menu .item .item__contents .contents__texture p {
 
 /* VISUAL */
 .visual {
-  margin-top: 250px;
+  margin: 250px 0 100px 0;
 }
 
 .visual .inner {
-  background-color: #fff;
-  opacity: 50%;
+  background-color: rgba(255,255,255,0.3);
   padding: 50px ;
   top: 30px;
-}
-
-.visual .inner h1 {
 }
 
 .markdown-body {
@@ -200,19 +195,25 @@ header .main-menu .item .item__contents .contents__texture p {
 }
 
 .visual .intro-menu {
-  color: #333333;
+  color: #353535;
   opacity: 100%;
 }
 
-.visual .intro-menu .intro-menu-greeting {
 
+/* FOOTER */
+footer {
+  background-color: #DF6C7E;
+  opacity: 60%;
 }
 
-.visual .intro-menu .intro-menu-stack {
-
+footer .notice {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
 }
 
-
-.visual .intro-menu .intro-menu-contact {
-
+footer .notice p {
+  margin-bottom: 10px;
 }
