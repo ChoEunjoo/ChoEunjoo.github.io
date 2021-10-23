@@ -1,7 +1,5 @@
 /* COMMON */
 body {
-  color: #333333;
-  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
@@ -10,6 +8,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  width: 375px;
 }
 
 img {
@@ -21,17 +20,14 @@ a {
 }
 
 .inner {
-  width: 70%;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
   position: relative;
-  min-width: 300px;
 }
 
 /* HEADER */
 header {
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   z-index: 9;
   background-image: url("../images/bgimg.jpg");
@@ -42,16 +38,15 @@ header {
 }
 
 header>.inner {
-  height: 240px;
+  height: 60px;
 }
 
 header .logo {
-  width: 90px;
+  width: 50px;
   position: absolute;
-  top: 50px;
+  top: 5px;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 10px;
   margin: auto;
 }
 
@@ -63,55 +58,43 @@ header .logo img {
 
 header .main-menu {
   position: absolute;
+  top: 15px;
+  bottom: 0;
+  right: 10px;
   display: flex;
-  justify-content: center;
-  width: 100%;
-  top: 180px;
-  bottom: 0px;
+  align-items: center;
   z-index: 1;
-  min-width: 300px;
 }
 
-header .main-menu .item .item__name {
-  padding: 15px 30px;
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: #DF6C7E;
-  margin: 0 10px;
-}
-
+header .main-menu .item .item__name,
 header .main-menu .item .item__name__btn {
-  padding: 15px 30px;
-  margin: 0 10px;
+  color: #df6c7d;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px;
 }
 
 header .main-menu .item .item__name__btn a {
   color: #df6c7d;
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-}
 
-header .main-menu .item:hover .item__name__btn {
-  background-color: #DF6C7E;
-  color: #D9EDDE;
-  border-radius: 6px 6px;
 }
 
 header .main-menu .item:hover .item__name {
   /* hover를 item__name에만 붙이면 딱 그부분만 바뀌며, 아래쪽 contents 부분이 바뀌지 않기 때문에 .item에 붙임 */
-  background-color: #DF6C7E;
-  color: #D9EDDE;
-  border-radius: 6px 6px 0 0;
+  background-color: rgba(223, 108, 126, 0.7);
+  color: #ffffff;
+  border-radius: 6px 6px;
+}
+header .main-menu .item:hover .item__name__btn {
+  background-color: rgba(223, 108, 126, 0.7);
+  border-radius: 6px 6px;
 }
 
-
-header .main-menu .item:hover .item__name__btn a,
-header .main-menu .item:hover .item__name__btn a:visited {
-  background-color: #DF6C7E;
-  color: #D9EDDE;
+header .main-menu .item:hover .item__name__btn a {
+  color: #ffffff;
 }
+
 
 
 header .main-menu .item .item__contents {
@@ -126,30 +109,30 @@ header .main-menu .item:hover .item__contents {
 }
 
 header .main-menu .item .item__contents .contents__menu {
-  background-color: #DF6C7E;
+  background-color: rgba(223, 108, 126, 0.7);
 
 }
 
 header .main-menu .item .item__contents .contents__menu>ul {
   /* ul 태그가 전체에 2개라 > 로 경로를 바로 잡아주는 것 */
   display: flex;
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 
 header .main-menu .item .item__contents .contents__menu>ul>li {
-  width: 220px;
+  width: 100%;
 }
 
 header .main-menu .item .item__contents .contents__menu>ul>li h4 {
   padding: 3px 0 12px 0;
-  font-size: 14px;
+  font-size: 12px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 550;
 }
 
 header .main-menu .item .item__contents .contents__menu>ul>li ul li {
   padding: 5px 0;
-  font-size: 12px;
+  font-size: 8px;
   color: #ffffff;
   cursor: pointer;
   /* 마우스 포인터를 손가락 모양으로 바꿔줌 */
@@ -179,21 +162,21 @@ header .main-menu .item .item__contents .contents__texture p {
 
 /* VISUAL */
 .visual {
-  margin: 250px 0 100px 0;
+  margin: 20px;
 }
 
 .visual .inner {
   background-color: rgba(255,255,255,0.3);
-  padding: 50px ;
-  top: 30px;
+  width: 95%;
+  padding: 10px;
+  top: 10px;
+  margin: auto;
 }
 
 .markdown-body {
   box-sizing: border-box;
-  min-width: 200px;
   max-width: 1100px;
-  margin: auto;
-  padding: 20px 50px;
+  margin: 0 20px 0 10px;
 }
 
 .visual .intro-menu {
@@ -207,16 +190,15 @@ footer {
   background-color: #DF6C7E;
   opacity: 60%;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 footer .notice {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
-  margin: 20px;
-  padding: 20px;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-footer .notice p {
-  margin-bottom: 10px;
-}
