@@ -201,6 +201,17 @@ header .main-menu .item .item__contents .contents__texture p {
   opacity: 100%;
 }
 
+.intro-menu-contact li {
+ display: flex; 
+}
+
+
+.intro-menu-contact img {
+  width: 20px;
+  height: 20px;
+  background-color: none;
+}
+
 
 /* FOOTER */
 footer {
