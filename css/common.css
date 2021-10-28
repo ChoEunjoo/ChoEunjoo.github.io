@@ -81,6 +81,12 @@ header .main-menu .item .item__name {
   margin: 0 10px;
 }
 
+header .main-menu .item .item__name a {
+
+  color: #DF6C7E;
+
+}
+
 header .main-menu .item .item__name__btn {
   padding: 15px 30px;
   margin: 0 10px;
@@ -106,6 +112,11 @@ header .main-menu .item:hover .item__name {
   border-radius: 6px 6px 0 0;
 }
 
+header .main-menu .item:hover .item__name a {
+  background-color: #DF6C7E;
+  color: #D9EDDE;
+}
+
 
 header .main-menu .item:hover .item__name__btn a,
 header .main-menu .item:hover .item__name__btn a:visited {
@@ -126,7 +137,7 @@ header .main-menu .item:hover .item__contents {
 }
 
 header .main-menu .item .item__contents .contents__menu {
-  background-color: #DF6C7E;
+  background-color: rgba(223, 108, 126, 0.7);
 
 }
 
