@@ -74,7 +74,7 @@ header .main-menu .item .item__name__btn {
   font-weight: 700;
   padding: 10px;
 }
-
+header .main-menu .item .item__name a,
 header .main-menu .item .item__name__btn a {
   color: #df6c7d;
 
@@ -90,12 +90,10 @@ header .main-menu .item:hover .item__name__btn {
   background-color: rgba(223, 108, 126, 0.7);
   border-radius: 6px 6px;
 }
-
+header .main-menu .item:hover .item__name a,
 header .main-menu .item:hover .item__name__btn a {
   color: #ffffff;
 }
-
-
 
 header .main-menu .item .item__contents {
   width: 100%;
@@ -110,7 +108,10 @@ header .main-menu .item:hover .item__contents {
 
 header .main-menu .item .item__contents .contents__menu {
   background-color: rgba(223, 108, 126, 0.7);
+}
 
+header .main-menu .item .item__contents .contents__menu a {
+  color: #ffffff;
 }
 
 header .main-menu .item .item__contents .contents__menu>ul {
